@@ -1,0 +1,21 @@
+OASISFormat:  0.4
+Name:         memory-check
+Version:      0.1.0
+Synopsis:     Blah
+License:      MIT
+Authors:      John Else
+Copyrights:   (C) 2015 John Else
+BuildTools:   ocamlbuild
+Plugins:      META (0.4), DevFiles (0.4)
+
+Executable reader_check
+  CompiledObject: best
+  Path:           src
+  MainIs:         reader_check.ml
+  BuildDepends:   rrd-transport, threads
+
+Executable writer_check
+  CompiledObject: best
+  Path:           src
+  MainIs:         writer_check.ml
+  BuildDepends:   rrd-transport, threads
